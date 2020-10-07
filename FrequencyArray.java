@@ -1,7 +1,7 @@
 /* WAP TO FIND THE FREQUENCY OF EACH NUMBER IN THE ARRAY */
 
 import java.util.*;
-class FrequencyArray
+class FreqeuncyArray
 {
 	public static void main(String args[])
 	{
@@ -19,19 +19,18 @@ class FrequencyArray
 		{
 			flag=0;
 			count = 0;
-			for(j=i+1;j<n;j++)
-			{
-				for(k=0;k<i;k++)
-					if(arr[k]==arr[i])
-						flag=1;
-				if(flag==1)
-					break;
-				if(arr[i]==arr[j])
-					count++;
-			}
+			for(k=0;k<i;k++)
+				if(arr[k]==arr[i])
+					flag=1;
 			if(flag!=1)
+			{
+				for(j=i+1;j<n;j++)
+				{
+					if(arr[i]==arr[j])
+						count++;
+				}
 				System.out.println(arr[i] + ":" + (count+1));
-		
+			}
 		}
 	}
 }
