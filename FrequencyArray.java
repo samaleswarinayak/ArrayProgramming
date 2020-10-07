@@ -1,7 +1,7 @@
 /* WAP TO FIND THE FREQUENCY OF EACH NUMBER IN THE ARRAY */
 
 import java.util.*;
-class FreqeuncyArray
+class FrequencyArray
 {
 	public static void main(String args[])
 	{
