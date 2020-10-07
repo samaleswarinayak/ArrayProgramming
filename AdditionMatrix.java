@@ -24,7 +24,7 @@ class AdditionMatrix
 				arr[i][j]=sc.nextInt();
 			}
 		}
-		System.out.println("enter the size of row and column of first array");
+		System.out.println("enter the size of row and column of second array");
 		m1 = sc.nextInt();
 		n1 = sc.nextInt();
 		System.out.println("enter the element to array ");

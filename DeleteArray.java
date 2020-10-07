@@ -23,14 +23,14 @@ class DeleteArray
 			{
 				System.out.println("enter the index ");
 				index = sc.nextInt();
-				if(index >n)
+				if(index >= n || index < 0)
 				{
 					System.out.println("index out of range ");
 					System.exit(0);
 					
 				}
 				
-				for(i=index-1;i<n-1;i++)
+				for(i=index;i<n-1;i++)
 					arr[i]=arr[i+1];
 				break;
 			}
@@ -54,10 +54,9 @@ class DeleteArray
 				for(i=index-1;i<n-1;i++)
 					arr[i]=arr[i+1];			
 				break;
-			}
-				
-			
+			}	
 		}
+		
 		if(ch == 'i' || ch =='I')
 			System.out.println("the array after deleting the element at index " + index + " is");
 		else
